@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Young Villain's Money Tracker</title>
+</head>
+<body>
+    <h1>Young Villain's Money Tracker App</h1>
+    <div class="input-section">
+        <label for="Category-select">Category</label>
+        <select id="Category-select">
+            <option value="income">Income</option>
+            <option value="expenses">Expense</option>\
+            <option value="Rent">Rent</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Education">Education</option>
+        </select>
+        <label for="amount-input">Amount</label>
+        <input type="number" id="amount-input" placeholder="Enter amount">
+        <label for="date-input">Date</label>
+        <input type="date" id="date-input">
+        <button id="add-button">Add</button>
+    </div>
+    <div class="expenses-list">
+        <h2>Expenses List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expenses-table-body">
+
+            </tbody>
+            <tfoot>
+                <td><strong>Total:</strong></td>
+                <td id="total-amount">$0.00</td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+    </div>
+  <script src="./script.js"></script>
+</body>
+</html>
